@@ -1,0 +1,160 @@
+/* AI Result */
+.container-in {
+  font-family: 'Jua';
+  width: 100%;
+  height: 100%;
+  /* background-color: white; */
+  /* opacity: 0.9; 0.5는 50% 투명도를 의미함 */
+  /* margin: 10px;     */
+  align-items: center;
+}
+.image-aires-face{
+  width: 400px; /* 원하는 크기로 조정 */
+  /* max-width: 700px; 최대 크기 설정 */
+  height: 450px;   /* 이미지 비율 유지 */ 
+  margin-left: 60px;  /* 이미지 간의 간격 조절 */     
+}
+.image-aires1 {
+  width: 80%; /* 원하는 크기로 조정 */
+  /*max-width: 700px; 최대 크기 설정 */
+  height: auto; /* 이미지 비율 유지 */
+  margin-right: 80px; /* 이미지 간의 간격 조절 */
+}
+.image-aires2 {
+  width: 80%; /* 원하는 크기로 조정 */
+  height: 850px;
+  /*max-width: 1000px; 최대 크기 설정 */  
+  margin-right: 10px; /* 이미지 간의 간격 조절 */
+  
+}
+.card-ai {
+    width: 92%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 10px;
+    background-color: #fff;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.ai2-btn {
+    /* position: absolute; */
+    bottom: 40px;
+    left: 150px;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #000000;
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-size: 1.2em;
+}
+.ai2-btn:hover{
+    background-color: #868484;
+}
+.ai2-btn-grp button{  
+    margin: 20px ;
+}
+
+
+
+
+
+
+
+
+
+
+/* AI Test */
+.ai-guideline {
+  font-size: 1.5em;
+  text-align: left;
+  margin-left: 25px;
+}
+.ai-guideline1 {
+  font-size: 1.0em;
+  text-align: left;
+  margin-left: 25px; 
+}
+
+
+.ai-container-in {
+  width: 100%;
+  height: 100%;
+  /* background-color: white; */
+  opacity: 0.9;
+  margin: 10px;  
+  font-family: 'Jua';
+  padding-bottom: 20px;
+}
+.ai-table img {
+  /* width: 100%; */
+}
+.ai-td {
+  /* width: 50%; */
+}
+.ai-image-guide {
+  width: 850px;
+  height: auto;
+  align-items: center;  
+}
+.ai-image2 {
+  width: 90%;
+  height: auto;
+  margin-right: 10px;
+}
+.ai-card1 {  
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 10px;
+  background-color: #fff;
+  margin: -10px;
+
+}
+.ai-btn {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #000000;
+  color: white;
+  width: 200px;
+  height: 50px;
+  font-size: 1.2em;
+} 
+.ai-btn:hover {
+  background-color: #868484;
+}
+.ai-btn-grp {  
+  margin: 20px; /* 가운데 정렬 */
+}
+
+.ai-card img{
+  border: 2px solid #ccc; /* 테두리 스타일 및 색상 설정 */
+  border-radius: 10px; /* 테두리의 모서리를 둥글게 만듭니다. */
+  padding: 8px; /* 테두리와 이미지 사이의 간격을 조정합니다. */  
+  height: 470px;
+  width: 470px;
+}
+
+.ai-card {
+  display: flex;
+  padding: 10px;
+  margin: 0 auto 0 auto;
+}
+
+.pictures{
+  border: 2px solid #ccc; /* 테두리 스타일 및 색상 설정 */
+  border-radius: 10px; /* 테두리의 모서리를 둥글게 만듭니다. */
+  padding: 10px; /* 테두리와 이미지 사이의 간격을 조정합니다. */  
+  margin: 0 auto;
+}

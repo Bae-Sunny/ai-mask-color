@@ -1,0 +1,40 @@
+.container { /* 공통으로 잡을것들 */
+  width: 100%;  
+  max-width: 1000px;
+  
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.493); /* 배경색상 변경예정 */
+  border : 3px solid rgba(0, 0, 0, 0.068); /* 복씨가 임시로 추가했음. */
+  border-radius: 8px;
+  flex-wrap: wrap;
+  font-family: 'Jua';
+  
+  }
+  .my-container {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.493); /* 배경색상 변경예정 */
+      border : 3px solid rgba(0, 0, 0, 0.068); /* 복씨가 임시로 추가했음. */
+      font-size: 25px;
+      font-family: "Jua";
+      border-radius: 15px;
+    }
+
+
+
+
+  .all-padding{
+      padding-top: 30px;
+  }
+
+
+  

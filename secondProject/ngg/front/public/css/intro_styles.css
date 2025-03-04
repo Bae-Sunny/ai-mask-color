@@ -1,0 +1,58 @@
+.intro {
+    height: 100%;
+    /* overflow-y: auto; */
+    position: relative;
+    /* background-color: #F6F6F6; */
+  }
+  
+  .intro img {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .try-btn {
+    width: 250px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    margin: 0px auto 20px; 
+    padding: 10px 20px;
+    z-index: 1;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  
+  .try-btn:hover {
+    background-color: #868484;
+  }
+  .tabs {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+.tabs-scroll-btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    /* margin: 10px auto;  */
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px 20px;
+    z-index: 1;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}

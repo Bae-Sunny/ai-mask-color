@@ -1,0 +1,135 @@
+
+
+    .test-contents {
+    font-family: 'Jua';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 90%;
+    text-align: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    }
+    
+    .image-upload {
+    position: relative;
+    width: 450px;
+    }
+    
+    .image-frame {
+    position: relative;
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+    }
+    
+    .existing-image {
+    position: relative;
+    z-index: 3; /* 최상위 레이어 */
+    width: 100%;
+    }
+    
+    .preview-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* 업로드된 이미지가 중간 레이어 */
+    }
+    
+    .preview-image {
+    max-width: 100%;
+    max-height: 100%;
+    }
+    
+    .bottom-color {
+    position: absolute;
+    top: 55.5%; /* 이미지 아래부터 61.5% 지점부터 색상 팔레트가 시작 */
+    left: 0;
+    width: 100%;
+    height: 60%; /* 색상 팔레트 선택 색상으로 덮이는 높이 */
+    z-index: 2; /* 색상 팔레트가 중간 레이어 위에 위치 */
+    }
+    
+    .image-upload-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 150px;
+    z-index: 4; /* 버튼이 가장 위에 위치하도록 설정 */
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #000000;
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-size: 1.2em;
+    }
+    
+    .image-upload:hover .image-upload-btn {
+    opacity: 1;
+    background-color: #868484;
+    }
+    
+    .color-palette table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1.5em;
+    border-radius: 8px;
+    background-color: rgba(218, 218, 218, 0.3);
+    }
+    
+    .color-palette th,
+    .color-palette td {
+    padding: 10px;
+    text-align: center;
+    }
+    
+    .color-palette .tone-title {
+    font-weight: bold;
+    padding-top: 20px;
+    }
+    
+    .color-palette .color-swatch {
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+    }
+    
+    .color-palette .color-swatch:hover {
+    border: 2px solid #000;
+    }
+    
+    .img-save-btn-container {
+    text-align: center;
+    margin-top: 20px;
+    }
+    
+    .img-save-btn {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    height: 50px;
+    }
+    
+    .img-save-btn:hover {
+    background-color: #868484;
+    color: white;
+    }
