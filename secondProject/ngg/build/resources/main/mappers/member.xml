@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.co.ict2.ngg.dao.MemberDao">
+
+	<insert id="memberadd" parameterType="mvo">
+		INSERT INTO member (mnum, memail, mpwd, mnick, mname, mgender, mbirth, mdate, locnum)
+    VALUES (seq_member.nextVal, #{memail}, #{mpwd}, #{mnick}, #{mname}, #{mgender}, #{mbirth}, sysdate, #{locnum})
+	</insert>
+
+	<select id="mydetail" resultType="mvo" parameterType="int">
+		select * from member where mnum = #{mnum}	
+	</select>
+	
+<!-- update mypage set mimgn=#{mimgn} where mnum=#{mnum} -->
+	<update id="myprofileupdate" parameterType="mvo">
+ 		update member set mimgn = #{mimgn} where mnum=#{mnum}
+ 	</update>
+ 	
+ 	<select id="myidcheck" parameterType="String" resultType="int">
+		select count(*) cnt from member where mnick=#{mnick}
+	</select>
+
+
+	<update id="myupdate" parameterType="mvo">
+		update member set mnick=#{mnick}, mpwd=#{mpwd}, locnum=#{locnum} where mnum=#{mnum}
+	</update>
+
+
+	<select id="myhistory" resultType="aivo" parameterType="int">
+	select * from ai_res where mnum = #{mnum} order by rdate DESC
+    </select>
+
+
+    <delete id="delHistory" parameterType="int">
+        delete from ai_res where rnum = #{rnum}
+    </delete>
+
+	<delete id="delAccount" parameterType="int">
+        delete from member where mnum = #{mnum}
+    </delete>
+	
+	<update id="seasonupdate" parameterType="mvo">
+      update member set season=#{season} where mnum=#{mnum}
+   	</update>
+</mapper>
